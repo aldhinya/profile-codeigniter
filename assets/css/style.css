@@ -1,0 +1,253 @@
+body {
+	background: #efefef;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+a:link,
+a:visited {
+	color: #07cb79;
+	text-decoration: none;
+}
+a:hover {
+	color: #aaa;
+	text-decoration: none;
+}
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+.garis {
+	border:3px solid #27ae60;
+	position: fixed;
+	top:0;
+	width: 100%;
+}
+.logo-container {
+	padding:10px 10px 5px 10px;
+}
+.logo-container img {
+	width: 100%;
+	max-width: 250px;
+}
+.menuku {
+	background: #27ae60;
+	overflow: auto;
+	white-space: nowrap;
+	padding-left: 10px;
+}
+
+a.aktip {
+	background: #2ecc71;
+}
+
+.menuku a {
+	display: inline-block;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.menuku a:hover {
+	background: #2ecc71;
+}
+.container {
+	background: #fff;
+	width: 50%;
+	margin: 60px auto 0px;
+	box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .2);
+	overflow: auto;
+}
+.artikel-isi img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+.foto {
+	float: left;
+	padding: 20px;
+}
+.foto img {
+	width: 180px;
+	border:1px solid #f5f5f5;
+}
+.panel {
+	margin: 20px 10px 10px 10px;
+}
+.panel .nama {
+	font-size: 2.5vw;
+	font-weight: 700;
+	color: #333;
+	margin-top: 10px;
+}
+.panel .nama span {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #dedede;
+}
+.panel .deskripsi {
+	margin-top: 10px;
+	font-size: 16px;
+	color: #333;
+	padding-bottom: 10px;
+	line-height: 1.5em;
+	overflow: auto;
+	overflow-x: hidden;
+}
+.kotak-kecil {
+	background-color: #07cb79;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 7px;
+	text-transform: uppercase;
+}
+.deskripsi h3 {
+	margin: 0 0 5px 0;
+}
+.deskripsi h2 {
+	line-height: 1em;
+	margin-bottom: 5px;
+}
+.foto-about {
+	width:100%;
+	max-width: 400px;
+	margin-top:20px;
+}
+.judul a {
+	color: #333;
+}
+.judul a:hover {
+	color: #07cb79;
+}
+.thumbnail img {
+	width: 100%;
+	max-width: 200px;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
+.artikel .detail {
+	font-size: 12px;
+}
+.tombol {
+	background: #07cb79;
+	border: none;
+	color: white;
+	padding: 5px 15px;
+	margin: 0 auto;
+	cursor: pointer;
+	font-size: 18px;
+	border-radius: 15px;
+}
+.tombol:hover{
+	background: #27ae60;
+}
+.footer {
+	text-align: center;
+	margin: 20px 0px 50px 0px;
+	color: #555;
+	font-size: 14px;
+}
+* {
+	box-sizing: border-box;
+}
+
+input[type=text],input[type=password], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+@media only screen and (max-width: 1400px) {
+	/* .foto img {
+         width: 100%;
+    }
+     */
+	.container {
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 1245px) {
+	.container {
+		width: 70%;
+	}
+}
+@media only screen and (max-width: 1070px) {
+	.panel .nama {
+		font-size: 3vw;
+	}
+}
+@media only screen and (max-width: 885px) {
+	.foto img {
+		width: 200px;
+	}
+}
+@media only screen and (max-width: 740px) {
+	.thumbnail img {
+		max-width: 100%;
+		height: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.menu span{
+		line-height: 40px;
+	}
+	.container {
+		margin: 30px auto 0;
+	}
+	.panel .nama {
+		font-size: 6vw;
+	}
+	.foto img {
+		width: 100%;
+	}
+	.foto {
+		padding: 10px;
+	}
+}
+@media only screen and (max-width: 465px) {
+	.container {
+		width: 90%;
+	}
+}
